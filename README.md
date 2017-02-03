@@ -6,7 +6,7 @@
 
 	"./node_modules/.bin/ngc"
 
-Error:
+### Error
 
 	$ "./node_modules/.bin/ngc"
 	Error: Internal state: StaticSymbols in summaries can't have members! {"filePath":"C:/Main/Work/ngc-import-bug/app/app-imports.ts","name":"Test","members":["TestModule"]}
@@ -22,3 +22,6 @@ Error:
 		at Array.forEach (native)
 	Compilation failed
 
+### Side way to fix error
+
+In file app/app.module.ts comment row 7 (`Test.TestModule, // Error`), and keep only row 8 (`Modules.TestModule // Ok`)
