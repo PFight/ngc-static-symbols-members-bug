@@ -1,0 +1,6 @@
+
+node_modules
+app/**/*.js
+app/**/*.ngfactory.ts
+app/**/*.metadata.json
+app/**/*.ngsummary.json
